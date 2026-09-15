@@ -73,7 +73,7 @@ end
 Securing Switches using AAA: authentication, authorization, accounting.
 config t
 username admin privilege 15 secret pass
-username namemo privilege 15 secret pass
+username kenneth privilege 15 secret pass
 line vty 0 14
 login local
 end
