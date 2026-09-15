@@ -189,10 +189,10 @@ config t
 ip routing
 ip dhcp pool CAMERA6
 host 10.12.50.6 255.255.255.0
-client-identifier abcd.1234.cafb
+client-identifier 001a.0704.7f5b 
 ip dhcp pool CAMERA8
 host 10.12.50.8 255.255.255.0
-client-identifier abcd.1234.cafb
+client-identifier 001a.0709.c258 
 end
 show ip dhcp binding
 
@@ -200,8 +200,8 @@ show ip dhcp binding
 conf t
  default int dot11radio 0
  default interface gigabitEthernet 0
-hostname aironet-20
- dot11 ssid SECPLUS-Mwifi
+hostname aironet-12
+ dot11 ssid SECPLUS-12wifi
  authentication open
  authentication key-management wpa
  wpa-psk ascii C1sc0123
@@ -210,7 +210,7 @@ int dot11radio 0
  no shut
  channel 9
  encryption mode ciphers tkip
- ssid SECPLUS-Mwifi
+ ssid SECPLUS-12wifi
  bridge-group 1
 end
 
@@ -313,12 +313,12 @@ ephone-dn 8
 ephone-dn 10
  number 1298
 Ephone 1
-  Mac-address cafe.face.baba
+  Mac-address 203a.0782.c0b5 
   type 8945
   button 1:8 2:7 3:6 4:5
   restart
 Ephone 2
-  Mac-address fafa.caca.baba
+  Mac-address  ccd8.c1fb.161b
   type 8945
   button 1:4 2:3 3:2 4:1
   restart  
