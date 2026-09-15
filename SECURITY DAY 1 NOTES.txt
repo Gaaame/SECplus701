@@ -1,0 +1,79 @@
+
+SOC/MSP:l1,l2,t1,t2:
+http://208.8.8.133/otrs/customer.pl
+user1
+C1sco123
+
+SOC/MSP:t3,t4:
+http://208.8.8.133/otrs/index.pl
+admin
+C1sco123
+
+job title
+l1/l2 msp
+ideally l3 msp
+
+3 WAY HANDSHAKE
+SA-SA-E
+
+HACKER <-> VICTIM/DESTINATION
+ 
+	<-SYN->
+	<-ACK->
+	<-SYN/ACK->
+	<-ESTABLISHED->
+
+layers of security
+LAYER 1: PHYSICAL
+netsh wlan show profile name="3F-Rivan" key=clear
+
+LAYER 2: DATA LINK/MAC ADDRESS
+nmap -sP 10.3.3.0/24
+70:A8:D3:B8:FA:A1
+
+LAYER 3: NETWORK IP ADDRESS
+ping 10.3.3.100+m
+
+LAYER 4: TRANSPORT/NMAP
+nmap -v nmap 10.3.3.100+m
+139 & 445 - MOST VULNERABLE PORTS ON ANY PC 
+
+LAYER 5: ATTACK PORT 139
+net use x: /delete
+net use \\10.3.3.111\ipc$
+
+LAYER 6: PRESENTATION
+
+LAYER 7: APPS
+microsoft-ds:445
+net use x: \\10.3.3.111\c$
+
+What to do is suspected of cyberattack?
+-> you fight back
+
+netstat -n -p tcp | findstr 445
+
+bits = physical layer
+V
+I
+T
+ 
+Bytes = digital layer
+every download or app used in software
+
+OSI - converts
+
+
+
+Homework: 
+- Install nmap
+Hack your alma mater university 
+
+- Make your own cybersecurity homelab
+vmware workstation 17 + license 
+itsm-incidentresponse 
+cisco firewall/fortinet vm
+windows server vm 
+
+3. 
+
